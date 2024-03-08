@@ -40,6 +40,11 @@ app.post("/api/upload",upload.single("file"),(req,res)=>{
 })
 
 
+app.get("/",(req,res) => {
+    res.send("RAM RAM JI");
+})
+
+
 // Connect Routes with App
 app.use("/api/auth",authRoute)
 app.use("/api/users",userRoute)
