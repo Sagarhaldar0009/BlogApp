@@ -20,7 +20,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use("/images",express.static(path.join(__dirname,"/images")))
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://blog-app-eosin-one.vercel.app",
     credentials:true
 }))
 // Middleare for Image Upload using Multer
